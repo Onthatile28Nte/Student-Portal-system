@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Uploads</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- Fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- Material Kit CSS -->
+  <link href="assets/css/material-kit.css?v=3.0.0" rel="stylesheet" />
+  <link rel="stylesheet" href="/Public/CSS/public.css">
+</head>
+
+<body style="background-color: rgb(190, 189, 189);">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent">
+    <div class="container">
+      <a class="navbar-brand text-white img-navbar" href="/Admin/dashboard.html">
+        <img src="/Public/Images/New-Edutrack-Image.png" alt="EduTrack Logo">
+      </a>
+      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0 ms-lg-12 ps-lg-5" id="navigation">
+        <ul class="navbar-nav navbar-nav-hover ms-auto">
+          <li class="nav-item mx-2 ms-lg-6">
+            <a class="nav-link ps-2 d-flex align-items-center" href="/Admin/uploads.html">
+              <i class="material-icons opacity-6 me-2 text-md">dashboard</i> Uploads
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link ps-2 d-flex align-items-center" href="/Admin/downloads.html">
+              <i class="material-icons opacity-6 me-2 text-md">view_day</i> Downloads
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link ps-2 d-flex align-items-center" href="/Admin/resources.html">
+              <i class="material-icons opacity-6 me-2 text-md">article</i> Resources
+            </a>
+          <li class="nav-item ms-lg-auto my-auto ms-3 ms-lg-0 mt-2 mt-lg-0">
+            <a href="/Admin/personal.html" class="btn btn-sm bg-gradient-primary mb-0 me-1 mt-2 mt-md-0">Personal info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  
+  <main class="main-style" style="height: 100vh;">
+    <h1 class="upload-header">Uploads</h1>
+    <section class="file-selction">
+        <div class="file-selection-container">
+            <h3 class="file-selction-header">Select A File:</h3>
+            <input type="file" class="file-selction-input input-upload">
+        </div>
+        
+        <div class="file-type-container">
+            <h3 class="file-type-header">File Type:</h3>
+            <input type="text" class="file-type-input input-upload" placeholder="PDF, Word, Excel....">
+        </div>
+
+        <div class="file-button">
+            <button type="submit" class="upload-button ">Upload File</button>
+        </div>
+        <div class="progress-container" style="margin-top:20px; display:none;">
+  <div class="progress-bar"
+       style="height: 10px; width:0%; background:#007bff; border-radius:5px; transition: width 0.3s ease;">
+  </div>
+</div>
+
+<p id="uploadStatus" style="margin-top:10px; font-weight:bold;"></p>
+
+    </section> 
+  </main>
+  
+<script src="/Public/Javascript/public.js"></script>
+</body>
+</html>
